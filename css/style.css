@@ -1,4 +1,25 @@
-h1 {
+:root {
+    --blanco: #fff;
+    --oscuro: #000;
+    --primario: #c4bef4;
+    --secundario: #a5e2e9;
+    --gris: #757575;
+}
+
+html {
+    font-size: 62.5%;
+}
+body{
+    font-size: 16px; /* 16px × 62.5% = 10px */ 
+    font-family: 'Krub', sans-serif;
+    /* All this means that:  1rem = 10px*/
+}
+
+.title {
     text-align: center;
-    color:black;
+    color:var(--oscuro);
+    font-size: 3.8rem; /* 3.8rem = 38px */
+}
+.title  span {
+    font-size: 2rem; /* 2rem = 20px */
 }
