@@ -23,3 +23,13 @@ body{
 .title  span {
     font-size: 2rem; /* 2rem = 20px */
 }
+
+.container{
+    width: 120rem;
+    margin: 0 auto;
+}
+
+.main-navigation{
+    background-color: var(--secundario);
+
+}
