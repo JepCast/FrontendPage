@@ -5,7 +5,6 @@
     --secundario: #a5e2e9;
     --gris: #757575;
 }
-
 html {
     font-size: 62.5%;
 }
@@ -14,7 +13,6 @@ body{
     font-family: 'Krub', sans-serif;
     /* All this means that:  1rem = 10px*/
 }
-
 .title {
     text-align: center;
     color:var(--oscuro);
@@ -23,13 +21,42 @@ body{
 .title  span {
     font-size: 2rem; /* 2rem = 20px */
 }
-
 .container{
-    width: 120rem;
+    max-width: 120rem;
     margin: 0 auto;
+    /* Esto es para que el contenedor se centre en la pagina */
+    /* Si tan solo hay dos valores en el margen css identificara que el primer dato es arriba, abajo y el segundo, izquierda, derecha. */
+}
+.nav-bg{
+    background-color: var(--secundario);
+}
+.main-navigation{
+    
+    display: flex;
+    /*Esto es para que los elementos se acomoden en una sola linea*/
+    flex-direction: column; 
+    align-items: center;
+   
+     
+}
+@media (min-width:768px){
+    /*Esto es para que cuando la pantalla sea mayor a 768px se aplique lo siguiente*/
+     .main-navigation{
+        flex-direction: row;
+        justify-content: space-between;
+         /*Esto es para que los elementos se acomoden en una sola linea y se distribuyan de manera equitativa*/
+     }
 }
 
-.main-navigation{
-    background-color: var(--secundario);
-
+.main-navigation a{
+    color: var(--oscuro);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+    /*El padding agrega grosor a un elemento de afuera hacía dentro en comparación de un margin el cual es de donde termina el elemnto hacia fuera*/
+}
+.main-navigation a:hover{
+    background-color: var(--primario);
+    color: var(--blanco);
 }
