@@ -195,7 +195,7 @@ h1,h2,h3{
     }
 }
 .services h2{
-    text-transform: uppercase;
+    text-transform: uppercase;  
 }
 .service{
     display: flex;
